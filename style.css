@@ -1,0 +1,119 @@
+body {
+    background: #8D86C9;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+p, h1, a {
+    color: #F7ECE1;
+    font-family: Geneva, Tahoma, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.middle {
+    background: #242038;
+    border-radius: 10px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    box-shadow: 0px 2px 8px #323031
+}
+
+.icon {
+    width: 226px;
+    height: 226px;
+    border: 5px solid #F7ECE1;
+    border-radius: 50%;
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 15px #8D86C9;
+    
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: #242038;
+    transition: ease-in-out .3s;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+li {
+    padding: 10px
+}
+
+.social-media {
+    display: table;
+    margin: 0 auto;
+}
+
+.link {
+    color: #8D86C9;
+    font-size: 20px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    #repos a:hover {
+        text-shadow: 0 0 8px #8D86C9;
+        transition: ease-in-out .3s;
+    }
+    #spotify:hover {
+        background: #1DB954;
+        font-size: 30px;
+        box-shadow: 0px 2px 8px rgb(84, 209, 128)
+    }
+
+    #github:hover {
+        background: #323031;
+        font-size: 30px;
+        box-shadow: 0px 2px 8px #323031
+    }
+
+    #twitter:hover {
+        background: #1DA1F2;
+        font-size: 30px;
+        box-shadow: 0px 2px 8px rgb(92, 192, 255)
+    }
+}
+
+@media only screen and (hover: none) {
+    #spotify {
+        background: #1DB954;
+        box-shadow: 0px 2px 8px rgb(84, 209, 128)
+    }
+
+    #github {
+        background: #323031;
+        box-shadow: 0px 2px 8px #323031
+    }
+
+    #twitter {
+        background: #1DA1F2;
+        box-shadow: 0px 2px 8px rgb(92, 192, 255)
+    }
+}
+
+@media only screen and (max-width: 479px){
+    .middle { 
+        width: 90%;
+    }
+}
